@@ -2,6 +2,10 @@
 /*  HOME PAGE */
 /*  ========= */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -10,7 +14,7 @@ body {
 
 #navbar {
     background-color: rgb(1, 11, 29);
-    padding: 20px 30px;
+    padding: 5px 30px;
     display: flex;
     justify-content: space-between;
 }
@@ -43,24 +47,49 @@ body {
     color: aquamarine;
 }
 
-#text-acceuil {
-    text-align: center;
-    font-size: 60px;
-    margin-top: 350px;
+#titre-page {
+    font-size: 22px;
+    border-bottom: 2px solid gray;
 }
 
-/*  ================ */
-/*  PAGE FORMULAIRE */
-/*  =============== */
+main {
+    margin: 20px;
+}
 
+#myVideo {
+    width: 100%;
+  }
 
+  #content {
+      margin-right: 400px;
+  }
 
+  .text-container {
+    background: rgba(0, 0, 0, 0.678);
+    color: #f1f1f1;
+    padding: 10px;
+    padding-bottom: 40px;
+    position: relative;
+    margin-top: -250px;
+  }
 
-/*  ============== */
-/*  PAGE TODO LIST  */
-/*  ==============*/
-
-
-/*  ============= */
-/*  PAGE  CHRONO*/
-/*  ===========  */
+  .text-container>p{
+      margin-bottom: 24px;
+  }
+  
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    background: rgb(247 224 60);;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  #myBtn:hover {
+    background: rgb(197, 197, 2);
+    color: black;
+  }
