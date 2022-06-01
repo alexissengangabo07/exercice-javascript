@@ -57,3 +57,49 @@ main {
     margin: 20px;
 }
 
+#demarrer {
+    background-color: green;
+    color: white;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+
+#stop {
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+#reinitialiser {
+    background-color: gray;
+    color: white;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+#demarrer:hover {
+    background-color: rgb(1, 87, 1);
+}
+
+
+#stop:hover {
+    background-color: rgb(151, 1, 1);
+}
+
+#reinitialiser:hover {
+    background-color: rgb(63, 61, 61);
+}
