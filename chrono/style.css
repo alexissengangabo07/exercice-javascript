@@ -10,7 +10,7 @@ body {
 
 #navbar {
     background-color: rgb(1, 11, 29);
-    padding: 20px 30px;
+    padding: 5px 30px;
     display: flex;
     justify-content: space-between;
 }
@@ -43,19 +43,18 @@ body {
     color: aquamarine;
 }
 
-#text-acceuil {
+#titre-page {
     font-size: 22px;
     border-bottom: 2px solid gray;
+}
+
+main {
+    margin: 20px;
 }
 
 /*  ============= */
 /*  PAGE  CHRONO*/
 /*  ===========  */
-
-
-main {
-    margin: 20px;
-}
 
 #demarrer {
     background-color: green;
