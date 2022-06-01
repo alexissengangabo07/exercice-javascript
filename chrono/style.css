@@ -44,13 +44,16 @@ body {
 }
 
 #text-acceuil {
-    text-align: center;
-    font-size: 60px;
-    margin-top: 350px;
+    font-size: 22px;
+    border-bottom: 2px solid gray;
 }
 
 /*  ============= */
 /*  PAGE  CHRONO*/
 /*  ===========  */
 
+
+main {
+    margin: 20px;
+}
 
