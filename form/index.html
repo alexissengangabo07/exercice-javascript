@@ -23,11 +23,11 @@
                 </ul>
             </div>
         </nav>
+
         <main>
             
             <div>
-                
-                    <form>
+                <form onsubmit="event.proventDefault(); validateForm()">
                         <h1 id="titre-page">Contactez-nous</h1>
 
                         <label for="nom">Prenom</label>
@@ -39,14 +39,14 @@
                         <small class="error"></small>
 
                         <label for="nom">Message</label>
-                        <textarea id="message" placeholder="Votre message" row="6">
+                        <textarea id="message" placeholder="Votre message" rows="6"></textarea>
                         <small class="error"></small>
                         
-                      <div>
-                          <input type="submit" value="envoyez le messange">
-                          <p id="message envoyé"></p>
+                    <div class="ButtonCenter">
+                    <input type="submit" value="envoyez le messange">
+                          <p id="Succes"></p>
                       </div>
-                    </form>
+                </form>
                
             </div>
         </main>
