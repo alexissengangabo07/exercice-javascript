@@ -56,3 +56,29 @@ main {
 /*  PAGE FORMULAIRE */
 /*  =============== */
 
+
+form{
+    max-width: 550px;
+    width: 90%;
+    background-color: rgb(231, 219, 219);
+    margin:17vh, auto 0 auto;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+    margin: 0;
+}
+label{
+    display: block;
+    margin: 20px 0;
+}
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid white;
+}
