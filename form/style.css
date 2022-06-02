@@ -56,11 +56,13 @@ main {
 /*  PAGE FORMULAIRE */
 /*  =============== */
 
-
+.container{
+    margin: auto;
+}
 form{
     max-width: 550px;
     width: 90%;
-    background-color: rgb(231, 219, 219);
+    background-color: rgb(116, 101, 101);
     margin:17vh, auto 0 auto;
     border-radius: 3px;
     box-sizing: border-box;
