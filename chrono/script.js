@@ -2,16 +2,16 @@
 /*  PAGE  CHRONO*/
 /*  ===========  */
 
-var affiche = document.querySelector('#affiche');
-var demarrer = document.querySelector('#demarrer');
-var stop = document.querySelector('#stop');
-var reinitialiser = document.querySelector('#reinitialiser');
+const affiche = document.querySelector('#affiche');
+const demarrer = document.querySelector('#demarrer');
+const pause = document.querySelector('#pause');
+const reinitialiser = document.querySelector('#reinitialiser');
+let containerStart;
 
 let tierce = 0;
 let sec = 0;
 let min = 0;
 let hrs = 0;
-let t;
 
 function comptage(){
     tierce++;
@@ -30,25 +30,32 @@ function comptage(){
 }
 function ajoutTexte() {
     comptage();
-    affiche.textContent = (min > 9 ? min : "0" + min) 
+    affiche.innerHTML = (min > 9 ? min : "0" + min) 
         	 + ":" + (sec > 9 ? sec : "0" + sec)
        		 + ":" + (tierce > 9 ? tierce : "0" + tierce);
     timer();
 }
+
 function timer() {
-    t = setTimeout(ajoutTexte, 10);
+    containerStart = setTimeout(ajoutTexte, 10);
 }
 
-// timer();
-// start.onclick = timer;
-// stop.onclick = function() {
-//     clearTimeout(t);
-// }
-// reset.onclick = function() {
-//     h1.textContent = "00:00:00";
-//     seconds = 0; minutes = 0; hours = 0;
-// }
-
 demarrer.addEventListener('click', ()=> {
-    add(); 
+    ajoutTexte(); 
 });
+
+pause.onclick = function() {
+    clearTimeout(containerStart);
+    affiche.textContent = (min > 9 ? min : "0" + min) 
+        	 + ":" + (sec > 9 ? sec : "0" + sec)
+       		 + ":" + (tierce > 9 ? tierce : "0" + tierce);
+ }
+
+ reinitialiser.addEventListener('click', () => {
+    affiche.textContent = "00:00:00";
+    clearTimeout(containerStart);
+    tierce = 0;
+    sec = 0;
+    min = 0;
+    hrs = 0;
+ });
