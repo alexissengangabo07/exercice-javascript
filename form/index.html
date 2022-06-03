@@ -25,19 +25,31 @@
                 </ul>
             </div>
         </nav>
+
         <main>
-            <h1 id="titre-page">FORMULAIRE</h1>
-            <div>
-                <form>
-                    <input method="#" type="text">
-                   
-                    <input name="texte1" type="text"><br/> 
-                    <input name="texte1" type="text"><br/> 
-                    <input name="texte1" type="text"><br/> 
+            
+            <div class="container"> 
+                <form onsubmit="event.proventDefault(); validateForm()">
+                        <h1 id="titre-page">Contactez-nous</h1>
 
-                    <input name="Submit1" type="submit" value="submit">
+                        <label for="nom">Prenom</label>
+                        <input type="text" id="name" placeholder="Votre nom">
+                        <small class="error"></small>
+                        
+                        <label for="nom">Email</label>
+                        <input type="text" id="email" placeholder="votre mail">
+                        <small class="error"></small>
 
+                        <label for="nom">Message</label>
+                        <textarea id="message" placeholder="Votre message" rows="6"></textarea>
+                        <small class="error"></small>
+                        
+                    <div class="ButtonCenter">
+                    <input type="submit" value="envoyez le messange">
+                          <p id="Succes"></p>
+                      </div>
                 </form>
+               
             </div>
         </main>
         </div>

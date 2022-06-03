@@ -56,3 +56,63 @@ main {
 /*  PAGE FORMULAIRE */
 /*  =============== */
 
+.container{
+    margin: auto;
+}
+form{
+    max-width: 550px;
+    width: 90%;
+    background-color: rgb(116, 101, 101);
+    margin:17vh, auto 0 auto;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+    margin: 0;
+}
+label{
+    display: block;
+    margin: 20px 0;
+}
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid rgb(70, 85, 219);
+}
+input [type="text"]:focus, textarea:focus{
+    border-bottom: 1px solid rgb(255, 0, 106);
+}
+textarea::-webkit-scrollbar{
+    width: 5px;
+}
+textarea::-webkit-scrollbar-thumb{
+    background-color: gray;
+}
+.ButtonCenter{
+    text-align: center;
+}
+input[type="submit"]{
+    margin-top: 40px;
+    width: 90%;
+    max-width: 200px;
+    background: linear-gradient(to right, rgb(255,0,1), rgb(255,67,61));
+     color: white;
+     font-size: 17px;
+     cursor: pointer;
+     border-radius: 3px;
+
+} 
+.error{
+    color: red;
+}
+.error-border{
+    border-bottom: 1px solid red;
+}
+#Succes{
+   color: green;
+}
