@@ -28,7 +28,7 @@ function comptage(){
         }
     }
 }
-function add() {
+function ajoutTexte() {
     comptage();
     affiche.textContent = (min > 9 ? min : "0" + min) 
         	 + ":" + (sec > 9 ? sec : "0" + sec)
@@ -36,7 +36,7 @@ function add() {
     timer();
 }
 function timer() {
-    t = setTimeout(add, 10);
+    t = setTimeout(ajoutTexte, 10);
 }
 
 // timer();
