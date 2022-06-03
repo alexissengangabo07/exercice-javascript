@@ -16,8 +16,35 @@ main{
     width: 370px;
     padding: 30px;
     border-radius: 7px;
-    background-color: #f1f1f1;
+    background-color: white;
 }
+.wrapper main{
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+}
+.wrapper form{
+   margin: 40px 0 20px 0;
+   
+}
+form :where(input, select, button){
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+form p{
+    font-size: 18px;
+}
+
+form input{
+    height: 50px;
+    font-size: 15px;
+    padding: 0 15px;
+    border: 1px solid #f1f1f1;
+}
+
 /*  ==============*/
 
 * {
