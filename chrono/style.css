@@ -65,10 +65,23 @@ main {
     padding: 10px;
     transition: all 1s ease;
     cursor: pointer;
+    font-weight: bold;
 }
 
 
-#stop {
+#pause {
+    background-color: rgb(2, 2, 155);
+    color: white;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    transition: all 1s ease;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#reinitialiser {
     background-color: red;
     color: white;
     border-radius: 4px;
@@ -77,17 +90,7 @@ main {
     padding: 10px;
     transition: all 1s ease;
     cursor: pointer;
-}
-
-#reinitialiser {
-    background-color: gray;
-    color: white;
-    border-radius: 4px;
-    outline: none;
-    border: none;
-    padding: 10px;
-    transition: all 1s ease;
-    cursor: pointer;
+    font-weight: bold;
 }
 
 #demarrer:hover {
@@ -95,10 +98,10 @@ main {
 }
 
 
-#stop:hover {
-    background-color: rgb(151, 1, 1);
+#pause:hover {
+    background-color: rgb(1, 1, 63);
 }
 
 #reinitialiser:hover {
-    background-color: rgb(63, 61, 61);
+    background-color: darkred;
 }
