@@ -1,5 +1,93 @@
 /*  ==============*/
 /*  MONEY CHANGE */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: cyan;
+}
+.wrapper{
+    width: 370px;
+    padding: 30px;
+    border-radius: 7px;
+    background-color: white;
+}
+.montitre{
+    font-size: 30px;
+    text-align: center;
+}
+.wrapper main{
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+}
+.wrapper form{
+   margin: 40px 0 20px 0;
+   
+}
+form :where(input, select, button){
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+form p{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+form input{
+    height: 50px;
+    font-size: 15px;
+    padding: 0 15px;
+    border: 1px solid #f1f1f1;
+}
+form input:focus{
+    padding: 0 14px;
+    border: 2px solid aqua;
+}
+
+form .drop-list{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.drop-list .selectDev{
+    display: flex;
+    height: 45px;
+    width: 25px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.selectDev select{
+    width: auto;
+    font-size: 16px;
+    margin: 0 -5px 0 5px;
+}
+
+form .exchange-rate{
+    font-size: 17px;
+    margin: 20px 0 30px;
+}
+form button{
+    height: 52px;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: aqua;
+}
+
 /*  ==============*/
 
 * {
