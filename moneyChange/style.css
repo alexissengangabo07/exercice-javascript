@@ -1,6 +1,23 @@
 /*  ==============*/
 /*  MONEY CHANGE */
-
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: cyan;
+}
+.wrapper{
+    width: 370px;
+    padding: 30px;
+    border-radius: 7px;
+    background-color: #f1f1f1;
+}
 /*  ==============*/
 
 * {
