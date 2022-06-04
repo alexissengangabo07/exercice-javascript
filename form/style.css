@@ -65,6 +65,7 @@ main{
     background-size: cover;
 
 }
+
 /* .container{
     margin: auto;
    
@@ -75,23 +76,25 @@ main{
     background-color: darkorchid;
 }
 form{
-    max-width: 499px;
+    max-width: 407px;
     width: 90%;
-    background-color: rgb(116, 101, 101);
-    /* margin: 17vh, auto 0 auto; */
+    /* background-color: rgb(230, 202, 202); */
     border-radius: 26px;
     box-sizing: border-box;
-    margin-left: 50px;
-    margin-top: 10px;
-    align-items: center;
+    margin-left: 332px;
+    margin-top: -10px;
+    
 }
 h1 {
     text-align: center;
     margin: 0;
+    color: white;
 }
 label{
     display: block;
     margin: 20px 0;
+    font-weight: bold;
+    color: white;
 }
 input, textarea{
     width: 100%;
@@ -109,27 +112,28 @@ textarea::-webkit-scrollbar{
     width: 5px;
 }
 textarea::-webkit-scrollbar-thumb{
-    background-color: gray;
+    background-color: rgb(224, 91, 91);
 }
 .ButtonCenter{
     text-align: center;
 }
 input[type="submit"]{
-    margin-top: 40px;
+    margin-top: 9px;
+    margin-bottom: 17px;
     width: 90%;
-    max-width: 200px;
-    background: linear-gradient(to right, rgb(255,0,1), rgb(255,67,61));
-     color: white;
-     font-size: 17px;
-     cursor: pointer;
-     border-radius: 3px;
+    max-width: 154px;
+    background: linear-gradient(to right, rgb(161 122 122), rgb(175 146 145));
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 19px;
 
 } 
 .error{
     color: red;
 }
 .error-border{
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid rgb(255, 255, 255);
 }
 #Succes{
    color: green;
