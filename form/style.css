@@ -56,23 +56,34 @@ main {
 /*  PAGE FORMULAIRE */
 /*  =============== */
 
-.container{
-    margin: auto;
-    background-image: url('form/bonlogo.jpg');
+main{
+    background-image: url('bonlogo.jpg');
     margin: 0;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+
 }
+/* .container{
+    margin: auto;
+   
+} */
 #overlay{
     width: 100%;
     height: 100%;
     background-color: darkorchid;
 }
 form{
-    max-width: 550px;
+    max-width: 499px;
     width: 90%;
     background-color: rgb(116, 101, 101);
-    margin:17vh, auto 0 auto;
-    border-radius: 3px;
+    /* margin: 17vh, auto 0 auto; */
+    border-radius: 26px;
     box-sizing: border-box;
+    margin-left: 50px;
+    margin-top: 10px;
+    align-items: center;
 }
 h1 {
     text-align: center;
