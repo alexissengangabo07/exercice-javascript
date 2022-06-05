@@ -1,69 +1,75 @@
-/*  ==== ====== */
-
-
-/*  HOME PAGE */
-
-
-/*  ========= */
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background: linear-gradient(70deg, transparent, rgba(181, 41, 200, 20));
-}
-
-#navbar {
-    background-color: rgb(1, 11, 29);
-    padding: 5px 30px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.img-site {
-    width: 50px;
-    border-radius: 50%;
-}
-
-.menu {
-    font-weight: bold;
-}
-
-.menu>ul {
-    display: flex;
-    gap: 30px;
-}
-
-.menu>ul>li {
-    list-style: none;
-    padding: 0px 0;
-}
-
-.menu>ul>li>a {
-    text-decoration: none;
-    color: white;
-    padding: 0px 0;
-    transition: all 0.5s ease;
-}
-
-.menu>ul>li>a:hover {
-    color: aquamarine;
-}
-
-#titre-page {
-    font-size: 22px;
-    border-bottom: 2px solid gray;
-}
-
-main {
-    margin: 20px;
-}
-
-
-/*  ============== */
-
-
-/*  PAGE TODO LIST  */
-
-
-/*  ==============*/
+    /*  ==== ====== */
+    /*  HOME PAGE */
+    /*  ========= */
+    
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        min-height: 100vh;
+        background: linear-gradient(70deg, transparent, rgba(181, 41, 200, 20));
+    }
+    
+    #navbar {
+        background-color: rgb(1, 11, 29);
+        padding: 5px 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .img-site {
+        width: 50px;
+        border-radius: 50%;
+    }
+    
+    .menu {
+        font-weight: bold;
+    }
+    
+    .menu>ul {
+        display: flex;
+        gap: 30px;
+    }
+    
+    .menu>ul>li {
+        list-style: none;
+        padding: 0px 0;
+    }
+    
+    .menu>ul>li>a {
+        text-decoration: none;
+        color: white;
+        padding: 0px 0;
+        transition: all 0.5s ease;
+    }
+    
+    .menu>ul>li>a:hover {
+        color: aquamarine;
+    }
+    
+    #titre-page {
+        font-size: 22px;
+        border-bottom: 2px solid gray;
+    }
+    
+    header,
+    form {
+        min-height: 20vh;
+        margin: 20px;
+        text-align: center;
+    }
+    
+    form button {
+        color: blue;
+        background-color: white;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    form button:hover {
+        color: white;
+        background-color: blue;
+    }
+    /*  ============== */
+    /*  PAGE TODO LIST  */
+    /*  ==============*/
