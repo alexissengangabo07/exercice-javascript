@@ -1,0 +1,97 @@
+::after{
+    box-sizing: border-box;
+    font-family: "system-ui", sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+ 
+}
+.container{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(black, transparent), url('bonlogo.jpg') center center no-repeat;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+nav logo{
+width: 120px;
+cursor: pointer;
+font-size: 2.5rem;
+font-style: italic;
+font-weight: bold;
+text-decoration: none;
+color: aqua;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding-right: 40px;
+    text-align: right;
+    list-style-type: none;
+}
+nav ul li{
+    margin-right: 10px;
+}
+nav ul li a{
+    padding: 10px 10px;
+    text-decoration: none;
+    color: aqua;
+    font-size: 16px; 
+}
+button.buton{
+padding: 10px 20px;
+font-size: 1.2rem;
+font-weight: bold;
+font-style: italic;
+margin-top: 0;
+background-color: transparent;
+color: aqua;
+border:3px solid transparent;
+transform: border-color 0.3s;
+cursor: pointer;
+}
+button.buton.hover{
+    border-color:aqua ;
+
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+
+.form-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    flex: auto;  
+}
+
+.form-wrapper .card{
+width: 360px;
+padding: 20px;
+background-color: rgb(0 0 0 /35%);
+}
+
+.card-header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px 20px 0;
+    font-size: 1.1rem;
+    color: aqua;
+    box-shadow: 2px 3px 8px #23f7ff71;
+    border-radius: 50px;
+}
