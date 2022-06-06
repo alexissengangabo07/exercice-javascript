@@ -61,7 +61,7 @@ main {
   }
 
   #content {
-      margin-right: 400px;
+      margin-right: auto;
   }
 
   .text-container {
@@ -93,3 +93,38 @@ main {
     background: rgb(197, 197, 2);
     color: black;
   }
+#questionnaires * {
+    transition: 1s;
+}
+#questionnaires {
+    width: 700px;
+    margin: 30px auto;
+    font-size: large;
+}
+#questionnaires textarea {
+    width: minmax(100px, 50%);
+    border: 2px solid rgb(151, 151, 151);
+}
+#questionnaires hr {
+    border: 1px solid grey;
+    border-top: 0px;
+}
+#questionnaires > div {
+    margin: 20px auto;
+}
+#questionnaires > button {
+    padding: 5px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    background-color: yellow;
+    font-size: large;
+    margin: auto;
+    display: block;
+}
+#questionnaires > button:hover {
+    background-color: black;
+    color: white;
+}
+#questionnaires .uncompleted {
+    color: rgb(150, 50, 50);
+}
