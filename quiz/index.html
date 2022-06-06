@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercice JavaScript</title>
+    <title>GDA - Exercice JavaScript</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="../images/js.png" type="image/x-icon">
+    <meta name="description" content="Exercices pratiques avec JavaScript fait dans le but de matrise le langage JavaScript en resolvant quelques problemes pratiques en associant nos recherches et les leçons apprise à Goma Digital Academy">
 </head>
 
 <body>
@@ -30,10 +31,60 @@
         <main>
             <h1 id="titre-page">QUIZ</h1>
             <div id="content">
+                <div id="questionnaires">
+                    <div class="question001">
+                        <p>Quelles sont vos intentions pour l'évolution du pays, dans un cadre politiquement correct et dans l'interêt des pays étrangers ? Veuillez utiliser la methode STAR pour repondre à cette question.</p>
+                        <div class="answers">
+                            <textarea name="text_question001" id="" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="question002">
+                        <p>La justice condamne un garçon pour avoir violé une fille de 17ans. La loi étant très stricte sur ce sujet, il a droit à un jugement. Le garçon se défend en disant que la fille l'a kidnappé et l'a obligé à commettre l'acte. En tant que juge, votre décision sur l'affaire serai :</p>
+                        <div class="answers">
+                            <input type="radio" name="radio_question002" id="tous_coupable">
+                            <label for="tous_coupable">La fille et le garçon sont coupable</label><br>
+                            <input type="radio" name="radio_question002" id="garcon_coupable">
+                            <label for="garcon_coupable">Le garçon seul doit être puni</label><br>
+                            <input type="radio" name="radio_question002" id="fille_coupable">
+                            <label for="fille_coupable">La faute revient à celle qui a kidnappé</label><br>
+                            <input type="radio" name="radio_question002" id="affaire_reporter">
+                            <label for="affaire_reporter">Je doute que le garçon puisse être contrait à un tel acte, neamoins, un kidnapping est aussi un crime. Cette affaire est à revoir.</label><br>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="question003">
+                        <p>Votre mére vous demande quelques sucrerie, sachant que vous en avez un certain nombre, selectionner celle qui lui plairait plus</p>
+                        <div class="answers">
+                            <input type="checkbox" name="check_question003[]" value="1" id="">
+                            <label for="">Des bonbons</label><br>
+                            <input type="checkbox" name="check_question003[]" value="2" id="">
+                            <label for="">Du chocolat</label><br>
+                            <input type="checkbox" name="check_question003[]" value="3" id="">
+                            <label for="">Du Soda</label><br>
+                            <input type="checkbox" name="check_question003[]" value="4" id="">
+                            <label for="">Du jus</label><br>
+                            <input type="checkbox" name="check_question003[]" value="5" id="">
+                            <label for="">Du thé</label><br>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="question004">
+                        <p>Vous arrivez à la fin du Formulaire, souhaitez-vous recevoir les resultats sur votre addresse mail ?</p>
+                        <div class="answers">
+                            <input type="radio" name="radio_question003" id="Oui003">
+                            <label for="Oui003">Oui</label><br>
+                            <input type="radio" name="radio_question003" id="Non003">
+                            <label for="Non003">Non</label><br>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
             </div>
         </main>
     </div>
-    <script src="./script.js"></script>
+    <script src="./script.js">
+    </script>
 </body>
 
 </html>

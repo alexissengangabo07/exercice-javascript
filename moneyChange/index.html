@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercice JavaScript</title>
+    <title>GDA - Exercice JavaScript</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="../images/js.png" type="image/x-icon">
+    <meta name="description" content="Exercices pratiques avec JavaScript fait dans le but de matrise le langage JavaScript en resolvant quelques problemes pratiques en associant nos recherches et les leçons apprise à Goma Digital Academy">
 </head>
 
 <body>
@@ -28,13 +29,54 @@
             </div>
         </nav>
         <main>
-            <h1 id="titre-page">MONEY CHANGE</h1>
-            <div id="content">
+            <div class="wrapper">
+                <header class="montitre">Money Change</header>
+                <form action="#">
+                    <div class="montant">
+                        <p>Entrer votre montant</p>
+                        <input type="text" value="1">
+                    </div>
+                    <div class="drop-list">
+                        <div class="De">
+                            <p>De</p>
+                            <div class="selectDev">
+                                <img src="https://www.countryflags.io/us/flat/64.png" alt="">
+                                <select name="" id="">
+                                    <option value="USD">USD</option>
+                                    <option value="CDF">CDF</option>
+                                    <option value="UGX">UGX</option>
+                                </select>
+                            </div>
+                        </div>
+                      <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+
+                        <div class="A">
+                            <p>A</p>
+                            <div class="selectDev">
+                                <img src="https://www.countryflags.io/us/flat/64.png" alt="">
+                                <select name="" id="">
+                                    <option value="USD">USD</option>
+                                    <option value="CDF">CDF</option>
+                                    <option value="UGX">UGX</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exchange-rate">1 USD = 2000 CDF</div>
+                    <button>Convertir</button>
+                </form>
 
             </div>
+
+
+            <!-- <h1 id="titre-page">MONEY CHANGE</h1>
+            <div id="content">
+
+            </div> -->
         </main>
     </div>
     <script src="./script.js"></script>
+    
 </body>
 
 </html>
