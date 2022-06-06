@@ -104,6 +104,8 @@ main {
 #questionnaires textarea {
     width: minmax(100px, 50%);
     border: 2px solid rgb(151, 151, 151);
+    border-radius: 7px;
+    padding: 10px;
 }
 #questionnaires hr {
     border: 1px solid grey;
