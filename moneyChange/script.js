@@ -4,7 +4,6 @@
 const usdInput = document.getElementById('input-usd')
 const cdfInput = document.getElementById('input-cdf')
 
-
 //Associer un événement qui correspond au changement de la valeur du champs
 usdInput.addEventListener('input', () => {
     // recupérer la valeur saisi par l'utilisateur
@@ -22,13 +21,41 @@ usdInput.addEventListener('input', () => {
     const nouvelleConversion = usdNombre * tauxNombre
     console.log(nouvelleConversion)
 
+    //Conversion nouvelle nombre en text avec 5 chiffre après la virgule
+    const nouvelleConversionText = nouvelleConversion.toFixed(3)
+    console.log(nouvelleConversionText)
+    
+
 
     //Mettre à jour le champ
-    cdfInput.value = nouvelleConversion
+    cdfInput.value = nouvelleConversionText
 
 })
 
 cdfInput.addEventListener('input', () => {
+
+     // recupérer la valeur saisi par l'utilisateur
+     const cdf = cdfInput.value
+     // Convertir la valeur en nombre
+     const cdfNombre = parseFloat(cdf)
+ 
+     //récupérer le taux
+    const taux = cdfInput.getAttribute('data-taux')
+ 
+     // Convertir le taux en nombre
+     const tauxNombre = parseFloat(taux)
+ 
+     //Calculer la nouvelle conversion
+     const nouvelleConversion = cdfNombre / tauxNombre
+     console.log(nouvelleConversion)
+
+       //Conversion nouvelle nombre en text avec 5 chiffre après la virgule
+    const nouvelleConversionText = nouvelleConversion.toFixed(3)
+    console.log(nouvelleConversionText)
+ 
+ 
+     //Mettre à jour le champ
+     usdInput.value = nouvelleConversionText
     
 })
 /*  ============== */
