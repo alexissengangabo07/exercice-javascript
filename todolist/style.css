@@ -67,8 +67,19 @@
     }
     
     form button:hover {
-        color: white;
+        color: rgb(255, 220, 20);
         background-color: blue;
+    }
+    
+    h1 {
+        font-family: roboto, sans-serif;
+        color: rgb(255, 220, 20);
+    }
+    
+    .todo_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     /*  ============== */
     /*  PAGE TODO LIST  */
