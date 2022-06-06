@@ -5,12 +5,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background-color: #e0e0e0;
+}
 main{
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: cyan;
 }
 .wrapper{
     width: 370px;
