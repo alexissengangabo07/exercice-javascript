@@ -7,7 +7,7 @@
         padding: 0;
         box-sizing: border-box;
         min-height: 100vh;
-        background: linear-gradient(70deg, transparent, rgba(181, 41, 200, 20));
+        background: linear-gradient(10deg, transparent, #60A5FA);
     }
     
     #navbar {
@@ -57,18 +57,61 @@
         min-height: 20vh;
         margin: 20px;
         text-align: center;
+        font-size: 1.2rem;
     }
     
     form button {
-        color: blue;
+        color: rgb(2, 2, 155);
         background-color: white;
         cursor: pointer;
         transition: all 0.3s ease;
     }
     
     form button:hover {
-        color: white;
-        background-color: blue;
+        color: rgb(255, 255, 1);
+        background-color: rgb(1, 11, 29);
+    }
+    
+    h1 {
+        font-family: roboto, sans-serif;
+        color: rgb(1, 11, 29);
+    }
+    
+    .todo_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .todo_list {
+        min-width: 50%;
+        flex: 1;
+        padding: .5rem 2rem;
+    }
+    
+    .todo {
+        margin: 0.2rem;
+        background: white;
+        color: black;
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+        justify-content: space-around;
+        transition: all 0.1s ease;
+        width: 300px;
+    }
+    
+    .btn_mod,
+    .btn_trash {
+        background: #ffe100;
+        color: black;
+        font-size: 1.2rem;
+        cursor: pointer;
+        padding: 0.2rem 1rem;
+    }
+    
+    .btn_mod {
+        background: green
     }
     /*  ============== */
     /*  PAGE TODO LIST  */
