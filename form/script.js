@@ -2,52 +2,22 @@
 /*  PAGE FORMULAIRE */
 /*  =============== */
 
-const nomImput = document.querySelector("name");
-const email = document.querySelector("email");
-const message = document.querySelector("message");
-const succes = document.querySelector("succes");
-const errorNodes = document.querySelector("error");
+const forlogin = ('forLogin');
+const loginForm = ('loginForm');
+const registerForm = ('registerForm');
+const formContenair = ('formContenair');
 
+const forRegister = document.querySelector('forRegister');
 
-function validateForm(){
+forRegister.addEventListener('click', () => {
+    forlogin.classList.remove('active')
+    forRegister.classList.add('active') 
+    if(registerForm.classList.contains('toggleForm')){
+        formContenair.style.transform = 'translate(-100%)';
+        formContenair.style.transition ='Transform -5s';
+         registerForm.classList.remove('toggleForm');
+         loginForm.classList.add('toggleForm');
 
-clearMessage();
-let errorFlag = false;
+    }   
 
-if(nameInput.value.length < 1){
-    errorNodes[0].innerText = "Name Cannot be blanK";
-    nameInput.classList.add("error-border");
-    errorFlag = true;
-  }
-
-  if(!emailIsValid(email.value)){
-    errorNodes[1].innerText = "Invalid email adress";
-    email.classList.add("error-border");
-    errorFlag = true;
-  }
-   if (message.value.length < 1){
-    errorNodes[2].innerText = "Tappez le message svp";
-    message.classList.add("error-border");
-    errorFlag = true;
-}
-    if(!errorFlag){
-        succes.innerText = "Success!";
-    }
-}
-
-//efface l'erreur/message succès 
-function clearMessage(){
-    for (let i = 0; i < errorNodes.length; i++){
-        errorNodes[i].innerText= "";
-    }
-    succes.innerText = "";
-    nameInput.classList.remove("error-border");
-    email.classList.remove("error-border");
-    message.classList.remove("error-border");
-}
-
-// tester la validité du mail
- function emailIsValid(email){
-     let pattern = /\S+@\S+\.\S+/;
-     return pattern.test(email)
- }
+})

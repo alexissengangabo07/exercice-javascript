@@ -56,85 +56,81 @@ main {
 /*  PAGE FORMULAIRE */
 /*  =============== */
 
-main{
-    background-image: url('bonlogo.jpg');
-    margin: 0;
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
 }
-
-/* .container{
-    margin: auto;
-   
-} */
-#overlay{
-    width: 100%;
-    height: 100%;
-    background-color: darkorchid;
+.form-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: auto;  
+}
+.form-wrapper .card{
+    width: 360px;
+    padding: 20px;
+    background-color: rgb(0 0 0 /35%);
+}
+.card-header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px 20px 0;
+    font-size: 1.1rem;
+    color: rgb(43, 102, 211);
+    box-shadow: 2px 3px 8px #02225fc7;
+    border-radius: 50px;
+}
+.card-header .form-header{
+    flex: 50px;
+    text-align: center;
+    padding: 10px 0;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    user-select: none;
+    cursor: pointer;  
+}
+.card-header .form-header.active{
+    box-shadow: inset 1px 1px 2px rgba(3, 19, 88, 0.233), inset -1px 1px 2px rgba(3, 19, 88, 0.233), inset -1px -1px 2px rgba(3, 19, 88, 0.233)
+    inset 1px -1px 2pxr  gba(3, 19, 88, 0.233);
+    border-color: rgb(243, 237, 237);
+transition:  border-color 0.3s,  box-shadow 0.3s;
+}
+.card-body{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 40px 0;
+    text-align: center;
 }
 form{
-    max-width: 407px;
-    width: 90%;
-    /* background-color: rgb(230, 202, 202); */
-    border-radius: 26px;
-    box-sizing: border-box;
-    margin-left: 332px;
-    margin-top: -10px;
-    
+    flex: 0 0 100%;
 }
-h1 {
-    text-align: center;
-    margin: 0;
-    color: white;
+.toggleForm{
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
 }
-label{
-    display: block;
-    margin: 20px 0;
-    font-weight: bold;
-    color: white;
-}
-input, textarea{
+.form-control{
     width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    outline: none;
-    resize: none;
     border: none;
-    border-bottom: 1px solid rgb(70, 85, 219);
+    border-bottom: 1px solid rgb(240, 240, 240);
+    background: none;
+    outline: none;
+    padding: 10px 5px;
+    margin-bottom: 20px;
+    color:#ffff
 }
-input [type="text"]:focus, textarea:focus{
-    border-bottom: 1px solid rgb(255, 0, 106);
+.formButton{
+    border: 1rem 3rem;
+    background-color: gray;
+    border-radius: 50px;
+    margin-top: 1rem;
+    font-size: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s ;
 }
-textarea::-webkit-scrollbar{
-    width: 5px;
-}
-textarea::-webkit-scrollbar-thumb{
-    background-color: rgb(224, 91, 91);
-}
-.ButtonCenter{
-    text-align: center;
-}
-input[type="submit"]{
-    margin-top: 9px;
-    margin-bottom: 17px;
-    width: 90%;
-    max-width: 154px;
-    background: linear-gradient(to right, rgb(161 122 122), rgb(175 146 145));
-    color: white;
-    font-size: 12px;
-    cursor: pointer;
-    border-radius: 19px;
-
-} 
-.error{
-    color: red;
-}
-.error-border{
-    border-bottom: 1px solid rgb(179, 30, 30);
-}
-#Succes{
-   color: green;
+.formButton:hover{
+    box-shadow: 3px 5px 15px #0e2c64c7;
+    transform: translate(5px);
 }

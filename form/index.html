@@ -24,33 +24,37 @@
             </div>
         </nav>
 
-        <main>
-            
-            <div class="container"> 
-                <form onsubmit="event.proventDefault(); validateForm()">
-                        <h1 id="titre-page">Contactez-nous</h1>
+        <section>
+            <div class="sec-container">
+                <div class="form-wrapper">
+                    <div class="card">
+                        <div class="card-header">
+                            <div id="forlogin" class="form-header active">Se connecter</div>
+                            <div id="forRegister" class="form-header">S'enregistrer</div>
+                        </div>
+                         <div class="card-body" id="formContenair">
 
-                        <label for="nom">Prenom</label>
-                        <input type="text" id="name" placeholder="Votre nom">
-                        <small class="error"></small>
-                        
-                        <label for="nom">Email</label>
-                        <input type="text" id="email" placeholder="votre mail">
-                        <small class="error"></small>
+                             <form id="LoginForm">
+                                 <input type="text" class="form-control" placeholder="@utilisateur" />
+                                 <input type="password" class="form-control" placeholder="@Mot de passe" />
+                                 <button class="formButton">Connexion</button>
+                             </form>
 
-                        <label for="nom">Message</label>
-                        <textarea id="message" placeholder="Votre message" rows="6"></textarea>
-                        <small class="error"></small>
-                        
-                    <div class="ButtonCenter">
-                    <input type="submit" value="envoyez le messange">
-                          <p id="Succes"></p>
-                      </div>
-                </form>
-               
+                             <form id="RegisterForm" class="toggleForm">
+                                <input type="text" class="form-control" placeholder="@utilisateur" />
+                                <input type="password" class="form-control" placeholder="@Mot de passe" />
+                                <input type="password" class="form-control" placeholder="@Confirmer le Mot de passe" />
+                                <button class="formButton">Inscription</button>
+                            </form>
+                         </div>
+
+                    </div>
+
+                </div>
+
+
             </div>
-        </main>
-        </div>
+        </section>
     <script src="./script.js"></script>
 </body>
 </html>
