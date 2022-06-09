@@ -2,6 +2,22 @@
 /*  PAGE FORMULAIRE */
 /*  =============== */
 
+const icon = document.querySelector('.mdi-menu');
+const links = document.querySelector('#menu-links');
+
+const  afficherMenu = () => {
+    if(links.style.display == 'none' || links.style.display == '') {
+        links.style.display = 'flex';
+    }
+    else {
+        links.style.display = 'none';
+    }
+}
+
+icon.addEventListener('click', () => {
+   afficherMenu()
+});
+
 const nomImput = document.querySelector("name");
 const email = document.querySelector("email");
 const message = document.querySelector("message");
