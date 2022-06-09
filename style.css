@@ -26,10 +26,12 @@ body {
 
 .menu {
     font-weight: bold;
+    display: flex;
 }
-.menu>ul {
+#menu-links {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
 }
 .menu>ul>li{
     list-style: none;
@@ -105,7 +107,7 @@ body {
         margin-top: 30px;
         margin-right: 0;
     }      
-    .menu>ul {
+    #menu-links {
         display: none;
     }
     .icon-mobile {

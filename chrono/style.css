@@ -2,55 +2,7 @@
 /*  NAVBAR */
 /*  ========= */
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
 
-#navbar {
-    background-color: rgb(1, 11, 29);
-    padding: 5px 30px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.img-site {
-    width: 50px;
-    border-radius: 50%;
-}
-
-.menu {
-    font-weight: bold;
-}
-.menu>ul {
-    display: flex;
-    gap: 30px;
-}
-.menu>ul>li{
-    list-style: none;
-    padding: 0px 0;
-}
-
-.menu>ul>li>a{
-    text-decoration: none;
-    color: white;
-    padding: 0px 0;
-    transition: all 0.5s ease;
-}
-
-.menu>ul>li>a:hover {
-    color: aquamarine;
-}
-
-#titre-page {
-    font-size: 22px;
-    border-bottom: 2px solid gray;
-}
-
-main {
-    margin: 20px;
-}
 
 /*  ============= */
 /*  PAGE  CHRONO*/
