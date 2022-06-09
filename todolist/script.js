@@ -16,14 +16,15 @@ icon.addEventListener('click', () => {
 
 
 //SELECTEUR
+let btnsDelete = '';
 const formular = document.querySelector(".formulaire");
 const button = document.querySelector(".btn");
 const todolist = document.querySelector(".todo_list");
 //ECOUTEUR
 button.addEventListener("click", addTodo);
-button.addEventListener("click", removemodTodo);
 //FONCTION
 function addTodo(event) {
+    
     event.preventDefault();
     //Todo Div
     const tododiv = document.createElement("div");
@@ -37,7 +38,7 @@ function addTodo(event) {
     // CREATION DES DEUX BUTTON (MODIFIER) & (Stodo_listUPPRIMER)  
     const todobutton = document.createElement("btn");
     todobutton.classList.add("btn_mod");
-    todobutton.innerHTML = '<i class="fa fa-check " > </i>';
+    todobutton.innerHTML = '<i class="fa fa-edit " > </i>';
     tododiv.appendChild(todobutton);
     const todobutton2 = document.createElement("btn");
     todobutton2.classList.add("btn_trash");
@@ -46,12 +47,15 @@ function addTodo(event) {
     todolist.appendChild(tododiv);
     formular.value = "";
 
+
+    btnsDelete = document.querySelectorAll('.btn_trash');
+    btnsDelete.forEach(element => {
+        element.addEventListener('click', e => {
+            e.preventDefault();
+            element.parentNode.remove();
+        })
+    });
 }
 
-function removemodTodo(e) {
-    const item = e.target;
-    if (item.classList[0] === "btn_trash") {
-        // const todo = item.parentElement;
-        tododiv.remove();
-    }
-}
+
+
