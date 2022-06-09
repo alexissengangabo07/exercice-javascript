@@ -138,7 +138,7 @@ body {
 }
 .menu>ul>li{
     list-style: none;
-    padding: 0px 0;
+    padding: 15px 0;
 }
 
 .menu>ul>li>a{
@@ -197,4 +197,9 @@ main {
   #myBtn:hover {
     background: rgb(197, 197, 2);
     color: black;
+  }
+
+
+  @media screen and (max-width: 750px) {
+         
   }
