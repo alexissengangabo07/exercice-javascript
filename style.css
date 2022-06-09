@@ -39,7 +39,7 @@ body {
 .menu>ul>li>a{
     text-decoration: none;
     color: white;
-    padding: 0px 0;
+    padding: 30px 0;
     transition: all 0.5s ease;
 }
 
@@ -50,10 +50,6 @@ body {
 #titre-page {
     font-size: 22px;
     border-bottom: 2px solid gray;
-}
-
-main {
-    margin: 20px;
 }
 
 #myVideo {
@@ -92,4 +88,37 @@ main {
   #myBtn:hover {
     background: rgb(197, 197, 2);
     color: black;
+  }
+
+  main {
+    margin: 20px;
+} 
+
+  @media screen and (min-width: 900px) {
+    .icon-mobile{
+        display: none;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    #content {
+        margin-top: 30px;
+        margin-right: 0;
+    }      
+    .menu>ul {
+        display: none;
+    }
+    .icon-mobile {
+        margin-top: 10px;
+    }
+    .icon-mobile>a {
+        text-decoration: none;
+    }
+    .icon-mobile>a>span {
+        color: white;
+        font-size: 35px;
+    }
+    .icon-mobile>a>span:hover {
+        color: aquamarine;
+    }
   }
