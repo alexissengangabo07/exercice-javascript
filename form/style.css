@@ -149,6 +149,7 @@ main {
 label {
     display: block;
     color: white;
+    margin-bottom: 5px;
 }
 
 .input-form {

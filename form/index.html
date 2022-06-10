@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GDA - Exercice JavaScript</title>
+    <link rel="shortcut icon" href="../images/js.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="../images/js.png" type="image/x-icon">
     <link rel="stylesheet" href="../MaterialDesign-Webfont-master/css/materialdesignicons.min.css">
@@ -41,15 +42,15 @@
                     </div>
                     <div class="form-group">
                         <label>Email</label>
-                        <input type="text" class="input-form" id="email" name="email" placeholder="Entrer votre adresse mail" required />
+                        <input type="email" class="input-form" id="email" name="email" placeholder="Entrer votre adresse mail" required />
                     </div>
                     <div class="form-group">
                         <label>Mot de passe</label>
-                        <input type="password" class="input-form" id="password" name="password" placeholder="Entrer votre Mot de passe" required />
+                        <input type="password" class="input-form" id="password" name="password" placeholder="Entrer votre Mot de passe" minlength="5" required />
                     </div>
                     <div class="form-group">
                         <label>Confirmer</label>
-                        <input type="password" class="input-form" id="confirm-password" name="confirm-password" placeholder="Confirmer votre Mot de passse" required />
+                        <input type="password" class="input-form" id="confirm-password" name="confirm-password" placeholder="Confirmer votre Mot de passse" minlength="5" required />
                     </div>
                     <div class="form-group">
                         <input type="submit" value="VALIDER" class="btn-form" id="btn-form" name="btn-form" />
