@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="../MaterialDesign-Webfont-master/css/materialdesignicons.min.css">
     <meta name="description" content="Exercices pratiques avec JavaScript fait dans le but de matrise le langage JavaScript en resolvant quelques problemes pratiques en associant nos recherches et les leçons apprise à Goma Digital Academy">
 </head>
+
 <body>
     <div>
         <nav id="navbar">
@@ -27,37 +29,37 @@
                 </ul>
                 <div class="icon-mobile">
                     <a href="javascript:void(0)"><span class="mdi mdi-menu"></span></a>
-                 </div>
+                </div>
             </div>
         </nav>
 
         <main>
-            
-            <div class="container"> 
-                <form onsubmit="event.proventDefault(); validateForm()">
-                        <h1 id="titre-page">Contactez-nous</h1>
-
-                        <label for="nom">Prenom</label>
-                        <input type="text" id="name" placeholder="Votre nom">
-                        <small class="error"></small>
-                        
-                        <label for="nom">Email</label>
-                        <input type="text" id="email" placeholder="votre mail">
-                        <small class="error"></small>
-
-                        <label for="nom">Message</label>
-                        <textarea id="message" placeholder="Votre message" rows="6"></textarea>
-                        <small class="error"></small>
-                        
-                    <div class="ButtonCenter">
-                    <input type="submit" value="envoyez le messange">
-                          <p id="Succes"></p>
-                      </div>
-                </form>
-               
+            <div class="form-card">
+                <form id="form" autocomplete="off">
+                    <div class="form-title">
+                        <h2>Créer un compte</h2>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="text" class="input-form" id="email" name="email" placeholder="Entrer votre adresse mail" required />
+                    </div>
+                    <div class="form-group">
+                        <label>Mot de passe</label>
+                        <input type="password" class="input-form" id="password" name="password" placeholder="Entrer votre Mot de passe" required />
+                    </div>
+                    <div class="form-group">
+                        <label>Confirmer</label>
+                        <input type="password" class="input-form" id="confirm-password" name="confirm-password" placeholder="Confirmer votre Mot de passse" required />
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="VALIDER" class="btn-form" id="btn-form" name="btn-form" />
+                    </div>
             </div>
-        </main>
-        </div>
+            </form>
+    </div>
+    </main>
+    </div>
     <script src="./script.js"></script>
 </body>
+
 </html>
