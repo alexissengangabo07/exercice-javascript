@@ -26,7 +26,7 @@ const confirmPassword = document.querySelector('#confirm-password');
 const btnForm = document.querySelector('#btn-form');
 
 const checkInput = () => {
-    if ((email.value == '' || password.value == '' || confirmPassword.value == '') || (password.value.length < 5 || password.value.length < 5)) {
+    if ((email.value == '' || password.value == '' || confirmPassword.value == '') && (password.value.length < 5 && password.value.length < 5)) {
         btnForm.style.cursor = 'not-allowed';
         btnForm.style.backgroundColor = 'gray';
     } else {
@@ -35,16 +35,34 @@ const checkInput = () => {
     }
 }
 
+const checkPasswordLength = () => {
+    if (password.value.length < 5) {
+        password.style.border = '1px solid red';
+    } else {
+        password.style.border = '1px solid lightgreen';
+    }
+}
+
+const checkConfirmPassword = () => {
+    if (confirmPassword.value == password.value) {
+        confirmPassword.style.border = '1px solid lightgreen';
+    } else {
+        confirmPassword.style.border = '1px solid red';
+    }
+}
+
 checkInput();
 
-email.addEventListener('keydown', () => {
+email.addEventListener('keyup', () => {
     checkInput();
 });
 
-password.addEventListener('keydown', () => {
+password.addEventListener('keyup', () => {
+    checkPasswordLength();
     checkInput();
 });
 
-confirmPassword.addEventListener('keydown', () => {
+confirmPassword.addEventListener('keyup', () => {
+    checkConfirmPassword();
     checkInput();
 });
